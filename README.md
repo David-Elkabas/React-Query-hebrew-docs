@@ -5,13 +5,13 @@ Last Edited Time: August 7, 2022 9:18 AM
 Status: In Progress
 Type: Technical Spec
 
-[https://imgs.search.brave.com/AbQnPPsVhZhL5WpKYUxWrwJTsYeH6RtG74TC3SfxVAY/rs:fit:513:326:1/g:ce/aHR0cHM6Ly9ibG9n/LnRoZW9kby5jb20v/c3RhdGljL2JiMTJl/ZGU4ZWRlNTBhY2M4/Y2RiNDQ3ZTdkYzhi/ZjZlLzZmZTg4L3Jx/LWxvZ28ucG5n](https://imgs.search.brave.com/AbQnPPsVhZhL5WpKYUxWrwJTsYeH6RtG74TC3SfxVAY/rs:fit:513:326:1/g:ce/aHR0cHM6Ly9ibG9n/LnRoZW9kby5jb20v/c3RhdGljL2JiMTJl/ZGU4ZWRlNTBhY2M4/Y2RiNDQ3ZTdkYzhi/ZjZlLzZmZTg4L3Jx/LWxvZ28ucG5n)
+![react query image.png](React-Query%2014e62b778c55464fa14a9e5ac2772b9f/RQ%20image.png)
 
 # Background
 
 סיכום כללי על React-query. רשום בקצרה וללא חפירות.
 
-ידע מקדים שדרוש (במילים אחרות- **מה לא יהיה פה**): 
+ידע מקדים שדרוש (במילים אחרות- **מה לא יהיה פה**):
 
 - הבנה של HTML,CSS,JS
 - הבנה של React
@@ -22,8 +22,8 @@ Type: Technical Spec
 
 - really good YouTube playlist about RQ v.3:
 
-<aside>
-📎 [https://www.youtube.com/playlist?list=PLC3y8-rFHvwjTELCrPrcZlo6blLBUspd2](https://www.youtube.com/playlist?list=PLC3y8-rFHvwjTELCrPrcZlo6blLBUspd2)
+> <aside>
+> 📎 [https://www.youtube.com/playlist?list=PLC3y8-rFHvwjTELCrPrcZlo6blLBUspd2](https://www.youtube.com/playlist?list=PLC3y8-rFHvwjTELCrPrcZlo6blLBUspd2)
 
 </aside>
 
@@ -36,14 +36,14 @@ Type: Technical Spec
 
 # Summary
 
-סיפריה שבאה במטרה להקל על כל תהליך הפניה לשרת לצורך קבלה/ עדכון מידע. 
+סיפריה שבאה במטרה להקל על כל תהליך הפניה לשרת לצורך קבלה/ עדכון מידע.
 
-אחד השימושיים העיקרים בסיפריה הוא למטרת fetching מידע מהשרת 
+אחד השימושיים העיקרים בסיפריה הוא למטרת fetching מידע מהשרת
 
- באה עם מלא props שיכולים לעזור ולשפר משמעותית את תהליך ה fetch בכל הקשור 
+באה עם מלא props שיכולים לעזור ולשפר משמעותית את תהליך ה fetch בכל הקשור
 
-<aside>
-💡 והיתרון המשמעותי של RQ זה שהיא נוחה לשימוש מכיוון שהכל קורה מאחורי הקלעים (useState, useEffect, useMemo וכו’). הכל הוא **out-of-the-box, with zero-config.** כל prop שרוצים ניתן לשנות ולהתאים למצב הרצוי
+> <aside>
+> 💡 והיתרון המשמעותי של RQ זה שהיא נוחה לשימוש מכיוון שהכל קורה מאחורי הקלעים (useState, useEffect, useMemo וכו’). הכל הוא **out-of-the-box, with zero-config.** כל prop שרוצים ניתן לשנות ולהתאים למצב הרצוי
 
 </aside>
 
@@ -66,7 +66,7 @@ export default function App() {
 ```
 
 - לאחר מכן כאשר נרצה לשלוח בקשת fetching לשרת נשתמש ב hook ש RQ מספקת
- לנו בשם **useQuery**:
+  לנו בשם **useQuery**:
 
 ```tsx
 import { useQuery } from "@tanstack/react-query";
@@ -131,9 +131,9 @@ const { props } = useQuery(['unique key'],function, configuration settings)
 
 לדעתי, חובה לעשות בו שימוש לאורך כל השימוש בRQ.
 
-[**יש סרטון מהפלייליסט שהמלצתי עליו שמסביר בצורה מצויינת את השימוש וכל היכולות.](https://www.youtube.com/watch?v=PJSVowvL2MU&list=PLC3y8-rFHvwjTELCrPrcZlo6blLBUspd2&index=5)** לא חושב שזה ייתן value נוסף שאכתוב פה אז פשוט תראו את הסרטון 😆.
+[\*\*יש סרטון מהפלייליסט שהמלצתי עליו שמסביר בצורה מצויינת את השימוש וכל היכולות.](https://www.youtube.com/watch?v=PJSVowvL2MU&list=PLC3y8-rFHvwjTELCrPrcZlo6blLBUspd2&index=5)\*\* לא חושב שזה ייתן value נוסף שאכתוב פה אז פשוט תראו את הסרטון 😆.
 
-[https://imgs.search.brave.com/Hqbyzb_Q7xO3bt81q40xl2lLFRWym9wr76DqQ02Y1sc/rs:fit:750:480:1/g:ce/aHR0cHM6Ly9hc3Nl/dHMuaG9uZ2tpYXQu/Y29tL3VwbG9hZHMv/ZnJlc2gtcmVzb3Vy/Y2VzLWZvci13ZWIt/ZGVzaWduZXJzLWFu/ZC1kZXZlbG9wZXJz/LWFwcmlsLTIwMjAv/cmVhY3QtcXVlcnku/anBn](https://imgs.search.brave.com/Hqbyzb_Q7xO3bt81q40xl2lLFRWym9wr76DqQ02Y1sc/rs:fit:750:480:1/g:ce/aHR0cHM6Ly9hc3Nl/dHMuaG9uZ2tpYXQu/Y29tL3VwbG9hZHMv/ZnJlc2gtcmVzb3Vy/Y2VzLWZvci13ZWIt/ZGVzaWduZXJzLWFu/ZC1kZXZlbG9wZXJz/LWFwcmlsLTIwMjAv/cmVhY3QtcXVlcnku/anBn)
+![react query devtools.png](React-Query%2014e62b778c55464fa14a9e5ac2772b9f/RQ%20dev%20tools.png)
 
 # More information
 
@@ -146,7 +146,7 @@ const { props } = useQuery(['unique key'],function, configuration settings)
 ```tsx
  {cacheTime: X} // x is number in milliseconds
 
-**EXAMPLE ==>>>** const { isLoading, error, data } = useQuery(['unique name'], function, 
+**EXAMPLE ==>>>** const { isLoading, error, data } = useQuery(['unique name'], function,
 {cacheTime: 1234 })
 ```
 
@@ -159,20 +159,28 @@ const { props } = useQuery(['unique key'],function, configuration settings)
 3. בעת חיבור מחדש לאינטרנט
 4. בעת מעבר בין דפים באפליקציה (כי בעצם סעיף 1 מתקיים)
 
-ניתן לשנות את תהליך ה re-fetching בעזרת מספר props. 
+ניתן לשנות את תהליך ה re-fetching בעזרת מספר props.
 
-באופן דיפולטיבי אין זמן מינימלי בין re-fetching ל re-fetching אלא רק בעת אחד מהמקרים הנ”ל (1-3). במידה ונרצה לשנות זאת אפשר להוסיף props :   
+באופן דיפולטיבי אין זמן מינימלי בין re-fetching ל re-fetching אלא רק בעת אחד מהמקרים הנ”ל (1-3). במידה ונרצה לשנות זאת אפשר להוסיף props :
 
 ```tsx
-{ staleTime : x } // by default x = 0, x in milliseconds
+{
+  staleTime: x;
+} // by default x = 0, x in milliseconds
 ```
 
 משנים נוספים שחשוב להכיר (השם שלהם לבד אומר מה הם עושים):
 
 ```tsx
-{ refetchOnMount: boolean | "always" }  
-{ refetchOnWindowFocus: boolean | "always" } 
-{ refetchOnReconnect: boolean | "always" } 
+{
+  refetchOnMount: boolean | "always";
+}
+{
+  refetchOnWindowFocus: boolean | "always";
+}
+{
+  refetchOnReconnect: boolean | "always";
+}
 ```
 
 - Defaults to **`true`**
@@ -182,12 +190,14 @@ const { props } = useQuery(['unique key'],function, configuration settings)
 
 ## Polling
 
-הפעולה polling  היא ביצוע re-fetch באופן יזום כל x זמן באופן אוטומטי. ללא קשר להאם המשתמש ביצע פעולות באפליקציה [mount, window focus, reconnect]
+הפעולה polling היא ביצוע re-fetch באופן יזום כל x זמן באופן אוטומטי. ללא קשר להאם המשתמש ביצע פעולות באפליקציה [mount, window focus, reconnect]
 
 במידה ונרצה לבצע polling נוסיף ל useQuery:
 
 ```tsx
-{ refetchInterval: number | false } // false by default. number in miliseconds
+{
+  refetchInterval: number | false;
+} // false by default. number in miliseconds
 ```
 
 💡**חשוב לדעת** במידה ובחרנו להשתתמש ב polling אז refetchInterval לא פועל כאשר אין פוקוס על מסך האפליקציה. במידה ונרצה להמשיך לעשות polling גם שאין פוקוס על מסך האפליקציה ניתן להוסיף prop נוסף:
@@ -199,9 +209,9 @@ refetchIntervalInBackground: boolean } //false by default
 
 ## Re-fetch on click
 
-נגדיר prop נוסף שמתקבל מ useQuery בשם refetch. לאחר מכן נוסיף כפתור עם פונקציה של onClick שמפנה לערך הזה. 
+נגדיר prop נוסף שמתקבל מ useQuery בשם refetch. לאחר מכן נוסיף כפתור עם פונקציה של onClick שמפנה לערך הזה.
 
-דוגמה לשם הבהרה: 
+דוגמה לשם הבהרה:
 
 ```tsx
 import { useQuery } from "@tanstack/react-query";
@@ -239,7 +249,7 @@ export default Example
 
 ## Callbacks
 
-ישנן מספר callback functions שניתן  להפעילן במידת הצורך בהתאם למצב שליפת המידע עם RQ. 
+ישנן מספר callback functions שניתן להפעילן במידת הצורך בהתאם למצב שליפת המידע עם RQ.
 
 - onSuccess
 - onError
@@ -255,16 +265,16 @@ export default Example
 
 בפרק הקרוב ארחיב על שימושים ספציפים ב RQ שבהחלט לא כולם צריכים.
 
-## ****Data Transformation (TDO)****
+## \***\*Data Transformation (TDO)\*\***
 
-ממש כמו שיש ב backend אופציה לעשות שינוי למידע שנשלף מה DB למידע נשלח למשתמש, כך גם יש אופציה לשינוי המידע בעזרת RQ. במקום לקבל את המידע איך שהוא ניתן להעביר אותו בפונקציה בשם select שהיא תשנה לפי רצוננו את המידע (TDO קלאסי). לא ארחיב, מי שרוצה יכול לראות [**בקישור הבא דוגמה לשימוש](https://www.youtube.com/watch?v=fbIb0m_GhlU&list=PLC3y8-rFHvwjTELCrPrcZlo6blLBUspd2&index=12).**
+ממש כמו שיש ב backend אופציה לעשות שינוי למידע שנשלף מה DB למידע נשלח למשתמש, כך גם יש אופציה לשינוי המידע בעזרת RQ. במקום לקבל את המידע איך שהוא ניתן להעביר אותו בפונקציה בשם select שהיא תשנה לפי רצוננו את המידע (TDO קלאסי). לא ארחיב, מי שרוצה יכול לראות [\*\*בקישור הבא דוגמה לשימוש](https://www.youtube.com/watch?v=fbIb0m_GhlU&list=PLC3y8-rFHvwjTELCrPrcZlo6blLBUspd2&index=12).\*\*
 
-## ****Dynamic**** useQuery
+## \***\*Dynamic\*\*** useQuery
 
-אז אחלה, אנחנו יודעים עד כו’ להשתמש ב RQ בשביל לעשות fetching למידע הנמצא ב end point סטטי (לדוגמה: [https://jsonplaceholder.typicode.com/posts](https://jsonplaceholder.typicode.com/posts) ). אבל מה עם end point דינמי? 
-לדוגמה: [**7/**https://jsonplaceholder.typicode.com/posts](https://jsonplaceholder.typicode.com/posts/7)  (שליחת בקשה בסגנון של **post/:id**)
+אז אחלה, אנחנו יודעים עד כו’ להשתמש ב RQ בשביל לעשות fetching למידע הנמצא ב end point סטטי (לדוגמה: [https://jsonplaceholder.typicode.com/posts](https://jsonplaceholder.typicode.com/posts) ). אבל מה עם end point דינמי?
+לדוגמה: [**7/**https://jsonplaceholder.typicode.com/posts](https://jsonplaceholder.typicode.com/posts/7) (שליחת בקשה בסגנון של **post/:id**)
 
-פתרון בעזרת דוגמה: 
+פתרון בעזרת דוגמה:
 
 בדוגמה הכנסתי id שמגיע מקומפונטת האב.
 
@@ -300,20 +310,26 @@ const Example = (props: Props) => {
 export default Example;
 ```
 
-ניתן לשים לב כי מערך הbinding key שלנו גדל (עד כו היה בו איבר בודד) מכיוון שאנחנו רוצים שהקומפוננטה הזאת ספציפית תעבור rendering רק בעת שאותו id (נגיד id =7) ישתנה ולא כל פעם שכל id ישתנה (id = 123 נגיד). 
+ניתן לשים לב כי מערך הbinding key שלנו גדל (עד כו היה בו איבר בודד) מכיוון שאנחנו רוצים שהקומפוננטה הזאת ספציפית תעבור rendering רק בעת שאותו id (נגיד id =7) ישתנה ולא כל פעם שכל id ישתנה (id = 123 נגיד).
 
 בצורה דומה אפשר לממש pagination
 
-## ****Parallel Queries****
+## \***\*Parallel Queries\*\***
 
-ניתן לעשות fetch במקביל בעזרת RQ מכיוון שהפונקציה לביצוע הfetching היא אנסינכרונית. 
+ניתן לעשות fetch במקביל בעזרת RQ מכיוון שהפונקציה לביצוע הfetching היא אנסינכרונית.
 
 ```tsx
-const { isLoading : isPostsLoading, data : posts, isError : postsError} =
-																					useQuery<any>(["example-data"],fetchPosts);
+const {
+  isLoading: isPostsLoading,
+  data: posts,
+  isError: postsError,
+} = useQuery<any>(["example-data"], fetchPosts);
 
-const { isLoading : isPicturesLoading, data : pictures, isError : picturesError} =
-																					useQuery<any>(["example-data"],fetchPictures);
+const {
+  isLoading: isPicturesLoading,
+  data: pictures,
+  isError: picturesError,
+} = useQuery<any>(["example-data"], fetchPictures);
 ```
 
 נעשה שימוש ב **[Type Aliases](https://www.digitalocean.com/community/tutorials/typescript-type-alias)** על מנת להבדיל בין שמות המשתנים.
@@ -324,29 +340,29 @@ const { isLoading : isPicturesLoading, data : pictures, isError : picturesError}
 
 ```tsx
 const queryResults = useQueries<any>({
-    queries: [
-      { queryKey: ["post", "1"], queryFn: () => fetchDataFunc("1") },
-      { queryKey: ["post", "2"], queryFn: () => fetchDataFunc("2") },
-    ],
-  });
+  queries: [
+    { queryKey: ["post", "1"], queryFn: () => fetchDataFunc("1") },
+    { queryKey: ["post", "2"], queryFn: () => fetchDataFunc("2") },
+  ],
+});
 console.log(queryResults);
 ```
 
-output: 
+output:
 
 ![Untitled](React-Query%2014e62b778c55464fa14a9e5ac2772b9f/Untitled.png)
 
-ניתן לראות שהערך שחוזר לנו הוא אותו דבר רק כעת הוא במערך של אובייקטים. 
+ניתן לראות שהערך שחוזר לנו הוא אותו דבר רק כעת הוא במערך של אובייקטים.
 
-## ****QueryClient****
+## \***\*QueryClient\*\***
 
-במידה ונרצה לגשת למידע השמור אצלנו ב cache (בין אם המידע שמור בזכות RQ או שמירה שעשינו עצמאית) ולבצע עליו פעולות נשתמש ב ****QueryClient.**** לדוגמה, במידה ונרצה למשוך מידע ספציפי (לפי ה query key) ששמור אצלנו ב cache  נשתמש בפונקציה:
+במידה ונרצה לגשת למידע השמור אצלנו ב cache (בין אם המידע שמור בזכות RQ או שמירה שעשינו עצמאית) ולבצע עליו פעולות נשתמש ב \***\*QueryClient.\*\*** לדוגמה, במידה ונרצה למשוך מידע ספציפי (לפי ה query key) ששמור אצלנו ב cache נשתמש בפונקציה:
 
 ```tsx
 import { QueryClient } from '@tanstack/react-query'
 
 const queryClient = new QueryClient({
-  defaultOptions: { // optional 
+  defaultOptions: { // optional
     queries: {
       staleTime: Infinity,
     },
@@ -359,7 +375,7 @@ const queryClient = new QueryClient({
 במידה ונרצה למחוק את כל המידע השמור ב cache נשתמש בפונקציה:
 
 ```tsx
-queryClient.clear()
+queryClient.clear();
 ```
 
 גם כאן, יש עוד מלא פונקציות שניתן להשתמש בהן, [הרשימה המלאה בקישור זה.](https://tanstack.com/query/v4/docs/reference/QueryClient)
