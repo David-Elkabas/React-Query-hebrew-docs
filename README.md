@@ -2,10 +2,10 @@
 
 Created: August 3, 2022 9:42 AM
 Last Edited Time: August 7, 2022 9:18 AM
-Status: In Progress
-Type: Technical Spec
+
 
 [https://imgs.search.brave.com/AbQnPPsVhZhL5WpKYUxWrwJTsYeH6RtG74TC3SfxVAY/rs:fit:513:326:1/g:ce/aHR0cHM6Ly9ibG9n/LnRoZW9kby5jb20v/c3RhdGljL2JiMTJl/ZGU4ZWRlNTBhY2M4/Y2RiNDQ3ZTdkYzhi/ZjZlLzZmZTg4L3Jx/LWxvZ28ucG5n](https://imgs.search.brave.com/AbQnPPsVhZhL5WpKYUxWrwJTsYeH6RtG74TC3SfxVAY/rs:fit:513:326:1/g:ce/aHR0cHM6Ly9ibG9n/LnRoZW9kby5jb20v/c3RhdGljL2JiMTJl/ZGU4ZWRlNTBhY2M4/Y2RiNDQ3ZTdkYzhi/ZjZlLzZmZTg4L3Jx/LWxvZ28ucG5n)
+
 
 # Summary
 
@@ -27,9 +27,11 @@ Type: Technical Spec
 
 </aside>
 
-- full documentation website: [https://tanstack.com/query/v4/docs/overview](https://tanstack.com/query/v4/docs/overview)
+- full documentation website: 
+- [https://tanstack.com/query/v4/docs/overview](https://tanstack.com/query/v4/docs/overview)
 
 🚧 הסיפריה RQ עברה עדכון גרסה לא מזמן (18.07.2022) וכתוצאה מכך ישנם מספר שינויים קלים. בפלייליסט שצירפתי הסרטונים מדברים על v3. כל התיעוד פה יהיה לפי גרסה v4.
+
 
 
 # Background
@@ -40,10 +42,8 @@ Type: Technical Spec
 
  באה עם מלא props שיכולים לעזור ולשפר משמעותית את תהליך ה fetch בכל הקשור 
 
-<aside>
 💡 והיתרון המשמעותי של RQ זה שהיא נוחה לשימוש מכיוון שהכל קורה מאחורי הקלעים (useState, useEffect, useMemo וכו’). הכל הוא **out-of-the-box, with zero-config.** כל prop שרוצים ניתן לשנות ולהתאים למצב הרצוי
 
-</aside>
 
 # How to use
 
@@ -104,10 +104,9 @@ const Example = (props: Props) => {
 export default Example;
 ```
 
-<aside>
+
 ⭐ בזכות זה שהבסופו של יום RQ הוא “רק” אוסף של מספר פונקציות ו hook-ים , שניתן לצרפם לקוד קיים יחסית בפשטות בלי צורך לקיים שינויים דרסטים בקוד מקור.
 
-</aside>
 
 ## The hook useQuery
 
@@ -132,6 +131,7 @@ const { props } = useQuery(['unique key'],function, configuration settings)
 [**יש סרטון מהפלייליסט שהמלצתי עליו שמסביר בצורה מצויינת את השימוש וכל היכולות.](https://www.youtube.com/watch?v=PJSVowvL2MU&list=PLC3y8-rFHvwjTELCrPrcZlo6blLBUspd2&index=5)** לא חושב שזה ייתן value נוסף שאכתוב פה אז פשוט תראו את הסרטון 😆.
 
 [https://imgs.search.brave.com/Hqbyzb_Q7xO3bt81q40xl2lLFRWym9wr76DqQ02Y1sc/rs:fit:750:480:1/g:ce/aHR0cHM6Ly9hc3Nl/dHMuaG9uZ2tpYXQu/Y29tL3VwbG9hZHMv/ZnJlc2gtcmVzb3Vy/Y2VzLWZvci13ZWIt/ZGVzaWduZXJzLWFu/ZC1kZXZlbG9wZXJz/LWFwcmlsLTIwMjAv/cmVhY3QtcXVlcnku/anBn](https://imgs.search.brave.com/Hqbyzb_Q7xO3bt81q40xl2lLFRWym9wr76DqQ02Y1sc/rs:fit:750:480:1/g:ce/aHR0cHM6Ly9hc3Nl/dHMuaG9uZ2tpYXQu/Y29tL3VwbG9hZHMv/ZnJlc2gtcmVzb3Vy/Y2VzLWZvci13ZWIt/ZGVzaWduZXJzLWFu/ZC1kZXZlbG9wZXJz/LWFwcmlsLTIwMjAv/cmVhY3QtcXVlcnku/anBn)
+
 
 # More information
 
@@ -246,6 +246,7 @@ export default Example
 משתלבות כמו שאר ה props לאחר הפונקציה ב useQuery.
 
 שימושי מאוד לפונקציות side effect כגון הקפצת חלון (popup) במידה ופעולת ה fetching נכשלה או הקפצת מודל או אפילו מעבר ל route אחר אם הפעולה הצליחה
+
 
 # Next level
 
