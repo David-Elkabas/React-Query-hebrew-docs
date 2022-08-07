@@ -29,10 +29,8 @@ Type: Technical Spec
 
 - full documentation website: [https://tanstack.com/query/v4/docs/overview](https://tanstack.com/query/v4/docs/overview)
 
-<aside>
 🚧 הסיפריה RQ עברה עדכון גרסה לא מזמן (18.07.2022) וכתוצאה מכך ישנם מספר שינויים קלים. בפלייליסט שצירפתי הסרטונים מדברים על v3. כל התיעוד פה יהיה לפי גרסה v4.
 
-</aside>
 
 # Background
 
