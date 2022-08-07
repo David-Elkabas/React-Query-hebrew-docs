@@ -7,7 +7,7 @@ Type: Technical Spec
 
 [https://imgs.search.brave.com/AbQnPPsVhZhL5WpKYUxWrwJTsYeH6RtG74TC3SfxVAY/rs:fit:513:326:1/g:ce/aHR0cHM6Ly9ibG9n/LnRoZW9kby5jb20v/c3RhdGljL2JiMTJl/ZGU4ZWRlNTBhY2M4/Y2RiNDQ3ZTdkYzhi/ZjZlLzZmZTg4L3Jx/LWxvZ28ucG5n](https://imgs.search.brave.com/AbQnPPsVhZhL5WpKYUxWrwJTsYeH6RtG74TC3SfxVAY/rs:fit:513:326:1/g:ce/aHR0cHM6Ly9ibG9n/LnRoZW9kby5jb20v/c3RhdGljL2JiMTJl/ZGU4ZWRlNTBhY2M4/Y2RiNDQ3ZTdkYzhi/ZjZlLzZmZTg4L3Jx/LWxvZ28ucG5n)
 
-# Background
+# Summary
 
 סיכום כללי על React-query. רשום בקצרה וללא חפירות.
 
@@ -34,7 +34,7 @@ Type: Technical Spec
 
 </aside>
 
-# Summary
+# Background
 
 סיפריה שבאה במטרה להקל על כל תהליך הפניה לשרת לצורך קבלה/ עדכון מידע. 
 
