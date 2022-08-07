@@ -2,12 +2,10 @@
 
 Created: August 3, 2022 9:42 AM
 Last Edited Time: August 7, 2022 9:18 AM
-Status: In Progress
-Type: Technical Spec
 
 ![react query image.png](React-Query%2014e62b778c55464fa14a9e5ac2772b9f/RQ%20image.png)
 
-# Background
+# Summary
 
 סיכום כללי על React-query. רשום בקצרה וללא חפירות.
 
@@ -27,14 +25,12 @@ Type: Technical Spec
 
 </aside>
 
-- full documentation website: [https://tanstack.com/query/v4/docs/overview](https://tanstack.com/query/v4/docs/overview)
+- full documentation website:
+- [https://tanstack.com/query/v4/docs/overview](https://tanstack.com/query/v4/docs/overview)
 
-<aside>
 🚧 הסיפריה RQ עברה עדכון גרסה לא מזמן (18.07.2022) וכתוצאה מכך ישנם מספר שינויים קלים. בפלייליסט שצירפתי הסרטונים מדברים על v3. כל התיעוד פה יהיה לפי גרסה v4.
 
-</aside>
-
-# Summary
+# Background
 
 סיפריה שבאה במטרה להקל על כל תהליך הפניה לשרת לצורך קבלה/ עדכון מידע.
 
@@ -44,8 +40,6 @@ Type: Technical Spec
 
 > <aside>
 > 💡 והיתרון המשמעותי של RQ זה שהיא נוחה לשימוש מכיוון שהכל קורה מאחורי הקלעים (useState, useEffect, useMemo וכו’). הכל הוא **out-of-the-box, with zero-config.** כל prop שרוצים ניתן לשנות ולהתאים למצב הרצוי
-
-</aside>
 
 # How to use
 
@@ -106,10 +100,7 @@ const Example = (props: Props) => {
 export default Example;
 ```
 
-<aside>
 ⭐ בזכות זה שהבסופו של יום RQ הוא “רק” אוסף של מספר פונקציות ו hook-ים , שניתן לצרפם לקוד קיים יחסית בפשטות בלי צורך לקיים שינויים דרסטים בקוד מקור.
-
-</aside>
 
 ## The hook useQuery
 
