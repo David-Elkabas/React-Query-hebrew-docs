@@ -3,7 +3,9 @@
 Created: August 3, 2022 9:42 AM
 Last Edited Time: August 7, 2022 9:18 AM
 
-![react query image.png](React-Query%2014e62b778c55464fa14a9e5ac2772b9f/RQ%20image.png)
+<div align="center">
+<img src="/React-Query%2014e62b778c55464fa14a9e5ac2772b9f/RQ%20image.png" />
+</div>
 
 # Summary
 
@@ -38,8 +40,8 @@ Last Edited Time: August 7, 2022 9:18 AM
 
 באה עם מלא props שיכולים לעזור ולשפר משמעותית את תהליך ה fetch בכל הקשור
 
-> <aside>
-> 💡 והיתרון המשמעותי של RQ זה שהיא נוחה לשימוש מכיוון שהכל קורה מאחורי הקלעים (useState, useEffect, useMemo וכו’). הכל הוא **out-of-the-box, with zero-config.** כל prop שרוצים ניתן לשנות ולהתאים למצב הרצוי
+<aside>
+💡 והיתרון המשמעותי של RQ זה שהיא נוחה לשימוש מכיוון שהכל קורה מאחורי הקלעים (useState, useEffect, useMemo וכו’). הכל הוא **out-of-the-box, with zero-config.** כל prop שרוצים ניתן לשנות ולהתאים למצב הרצוי
 
 # How to use
 
@@ -106,7 +108,9 @@ export default Example;
 
 ה hook עצמו מורכב מכמה חלקים שחובה להבין על מנת להשתמש ב RQ בצורה האופטימלית.
 
-![react query structure.drawio.png](React-Query%2014e62b778c55464fa14a9e5ac2772b9f/react_query_structure.drawio.png)
+<div align="center">
+<img src="/React-Query%2014e62b778c55464fa14a9e5ac2772b9f/react_query_structure.drawio.png" />
+</div>
 
 או בשורה למי שיותר נוח לראות את זה ככה
 
@@ -124,7 +128,9 @@ const { props } = useQuery(['unique key'],function, configuration settings)
 
 [\*\*יש סרטון מהפלייליסט שהמלצתי עליו שמסביר בצורה מצויינת את השימוש וכל היכולות.](https://www.youtube.com/watch?v=PJSVowvL2MU&list=PLC3y8-rFHvwjTELCrPrcZlo6blLBUspd2&index=5)\*\* לא חושב שזה ייתן value נוסף שאכתוב פה אז פשוט תראו את הסרטון 😆.
 
-![react query devtools.png](React-Query%2014e62b778c55464fa14a9e5ac2772b9f/RQ%20dev%20tools.png)
+<div align="center">
+<img src="/React-Query%2014e62b778c55464fa14a9e5ac2772b9f/RQ%20dev%20tools.png" />
+</div>
 
 # More information
 
