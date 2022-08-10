@@ -40,7 +40,6 @@ Last Edited Time: August 7, 2022 9:18 AM
 
 באה עם מלא props שיכולים לעזור ולשפר משמעותית את תהליך ה fetch בכל הקשור
 
-<aside>
 💡 והיתרון המשמעותי של RQ זה שהיא נוחה לשימוש מכיוון שהכל קורה מאחורי הקלעים (useState, useEffect, useMemo וכו’). הכל הוא **out-of-the-box, with zero-config.** כל prop שרוצים ניתן לשנות ולהתאים למצב הרצוי
 
 # How to use
